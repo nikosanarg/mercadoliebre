@@ -1,0 +1,34 @@
+* {
+  font-size: 20px;
+}
+
+body {
+  padding-top: 2rem;
+}
+
+input {
+  width: 80%;
+  height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+.label-texto {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.input-small {
+  width: 10%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.intereses {
+  text-align: left;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}

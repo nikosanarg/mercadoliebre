@@ -23,54 +23,39 @@
           src="./images/logo-mercado-liebre.svg"
           alt="Logo de MercadoLiebre"
         />
-        <br>
-        <input id="searchbar" placeholder="Buscar..."></input>
-        <button><i class="fas fa-search"></i></button>
-        <br><br>
-        <p>
+        <div class="searchbar">
+          <input placeholder="Buscar..."></input>
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <p class="slogan">
           <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta
           de crédito
         </p>
       </div>
       <br>
-      <nav id="navbar">
-        <ul>
-          <li><a href="./ofertas.html">Ofertas</a></li>
-          <li><a href="./tiendas.html">Tiendas oficiales</a></li>
-          <li><a href="./vender.html">Vender</a></li>
-          <li><a href="./ayuda.html">Ayuda</a></li>
-        </ul>
-      </nav>
-      <br>
-      <nav id="loginbar">
-        <ul>
-          <li>
-            <a href="./registro.html"
-              >Creá tu cuenta <i class="fas fa-id-card"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./login.html"
-              >Ingresá <i class="fas fa-sign-out-alt"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./carrito.html"
-              >Mis compras <i class="fas fa-shopping-basket"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+      <div class="flexnavs">
+        <nav id="navbar" class="flexnavbar">
+          <a href="./ofertas.html">Ofertas</a>
+          <a href="./tiendas.html">Tiendas oficiales</a>
+          <a href="./vender.html">Vender</a>
+          <a href="./ayuda.html">Ayuda</a>
+        </nav>
+        <nav id="loginbar" class="flexnavbar">
+          <a href="./registro.html">Creá tu cuenta <i class="fas fa-id-card"></i></a>
+          <a href="./login.html">Ingresá <i class="fas fa-sign-out-alt"></i></a>
+          <a href="./carrito.html">Mis compras <i class="fas fa-shopping-basket"></i></a>
+        </nav>
+      </div>
       <br>
       <div class="icono burger-menu">
         <i class="fas fa-bars icono-grande"></i>
       </div>
-      <img class="banner" src="/images/img-home-banner.jpg" alt="">
     </header>
+    <img class="banner" src="/images/img-home-banner.jpg" alt="">
 
     <main>
-      <section>
-        <h2 class="titular">Basado en tu última visita</h2>
+      <h2 class="titular">Basado en tu última visita</h2>
+      <section class="catalogo">
 
         <article class="producto">
           <img
@@ -127,15 +112,15 @@
             <div class="icono-envio">
               <i class="fas fa-truck"></i>
             </div>
-          <p class="precio">Precio: $23.200</p>
-          <p class="detalle descuento">5% OFF</p>
-          <h3 class="detalle descripcion">SmartTv Samsung 43"</h3>
+            <p class="precio">Precio: $23.200</p>
+            <p class="detalle descuento">5% OFF</p>
+            <h3 class="detalle descripcion">SmartTv Samsung 43"</h3>
             </div>
         </article>
       </section>
 
-      <section>
-        <h2 class="titular">Ofertas</h2>
+      <h2 class="titular">Ofertas</h2>
+      <section class="catalogo">
 
         <article class="producto">
           <img

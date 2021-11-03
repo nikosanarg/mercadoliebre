@@ -10,8 +10,9 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
 }
@@ -23,9 +24,11 @@ body {
 a {
   text-decoration: none;
 }
+
 header {
   background-color: var(--amarillo);
 }
+
 footer {
   background-color: white;
 }
@@ -54,31 +57,52 @@ main section article img {
   padding: 15px;
   text-align: left;
   background-color: white;
+  position: relative;
 }
 
 .icono-envio {
-  width: 24px;
-  height: 24px;
   border: 1px solid var(--verde);
   border-radius: 50%;
   color: var(--verde);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  right: 20px;
+  top: -15px;
+}
+
+.h-center {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo-ml {
+  width: 50%;
+  flex-basis: 50%;
+}
+
+.searchbar {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.slogan {
+  flex-basis: 25%;
 }
 
 header img {
   text-align: center;
 }
 
-.logo-ml {
-  width: 50%;
-}
-
 .banner {
   width: 100%;
-}
-
-.h-center {
-  margin: auto;
-  text-align: center;
 }
 
 .titular {
@@ -121,16 +145,53 @@ header img {
   display: none;
 }
 
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+article {
+  flex-basis: 100%;
+}
+
 nav {
   display: none;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.flexnavs {
+  justify-content: space-between;
+}
+
+.flexnavbar {
+  flex-wrap: wrap;
 }
 
 @media (min-width: 361px) {
+  .logo-ml {
+    width: 32%;
+    flex-basis: 32%;
+  }
+  .searchbar {
+    flex-basis: 32%;
+  }
+  .slogan {
+    flex-basis: 32%;
+  }
+  .flexnavs {
+    display: flex;
+  }
   .descripcion {
     display: block;
   }
   .producto {
     box-shadow: 0 0 10px rgb(100, 100, 100);
+  }
+  article {
+    flex-basis: 45%;
   }
   nav {
     display: block;
@@ -141,4 +202,7 @@ nav {
 }
 
 @media (min-width: 769px) {
+  article {
+    flex-basis: 22%;
+  }
 }
